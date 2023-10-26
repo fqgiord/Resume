@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">Giordano<b>.</b></div>
+            <ul class="navItems">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">skills</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I can work in <span class="multiText"></span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cum voluptates dolore eaque incidunt at ut, accusamus doloremque, maiores modi fuga earum! Id, libero ad quas voluptatibus maxime accusamus doloremque.</p>
+                <div class="btns">
+                    <button>dowload CV</button>
+                    <button>hire me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="splash.png" id="splash">
+                    <img src="img.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings : ["Frontend", "Backend", "Engineer"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500,
+        })
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="logo">Giordano<b>.</b></h2>
+                <p>Algumas palavras sobre você ou sua empresa.</p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; info@giordano.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            <div class="footer-section links">
+                <h2>Links Rápidos</h2>
+                <br>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+           </div>
+         </div>
+
+         <div class="footer-bottom">
+            &copy; 2023 Giordano | Designed by Your Name
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,12 +1,14 @@
 
 <p align="center">
-  <img src="https://github.com/fqgiord/Resume/assets/117307542/d9a95167-aff2-4a0d-a298-146e54ce1957" width="1000" />
+   <img src="https://github.com/fqgiord/Resume/blob/main/principal%20image.png" width="1000" />
+  
 </p>
 
 
 # portfolio
 
-> Nothing fancy here, just a interesting digital model resume I did to practise HTML and CSS features.
+> Nothing fancy here, just a interesting digital model resume I did to practise HTML, CSS and others features.
++ typed.js for typing effect
 
 
 # technology utilized:

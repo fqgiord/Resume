@@ -75,6 +75,7 @@ b{
 }
 
 .wrapper{
+    background-color: rgb(255, 255, 255);
     display: flex;
     width: 100%;
     height: calc(100vh - 80px);
@@ -84,6 +85,15 @@ b{
     overflow: hidden;
 }
 
+.wrapper .imgbox2{
+    top: 90%;
+    background-color: aqua;
+    display: block;
+    position: fixed;
+    top: 14%;
+}
+
+
 .wrapper::before{
     position:absolute;
     content: '';
@@ -92,11 +102,12 @@ b{
     border-radius: 50%;
     left: -12%;
     top: 40%;
-    background: linear-gradient(45deg, #7f00ff, pink);
+    background: linear-gradient(45deg, #7f00ff, rgb(253, 250, 250));
     animation: object1 6s linear infinite;
 }
 
 .wrapper::after{
+    opacity: 100%;
     position:absolute;
     content: '';
     height: 200px;
@@ -104,12 +115,13 @@ b{
     border-radius: 50%;
     left: 35%;
     top: 12%;
-    background: linear-gradient(45deg, #7f00ff, pink);
+    background: linear-gradient(45deg, #7f00ff, rgb(200, 207, 250));
     animation: object2 6s linear infinite;
 }
 
 @keyframes object1{
     50%{
+        opacity: 40%;
         left: -13%;
         top: 41%;
     }
@@ -117,7 +129,8 @@ b{
 
 @keyframes object2{
     50%{
-        left: 35%;
+        opacity: 30%;
+        left: 36%;
         top: 10%;
     }
 }
@@ -164,7 +177,7 @@ b{
 }
 
 .multiText{
-    color: #7f00ff;
+    color: #5905ac;
     text-transform: capitalize;
 }
 p{
@@ -198,46 +211,31 @@ button{
 button:hover{
     background-color:#7f00ff;
 }
- 
-.imgbox {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.imgbox .img{
-    position: relative;
-    height: 100%;
-    width: calc(130% - 80px);
-    top: -100px;
-    right: 50px;
-    animation: animateUser 4s linear infinite; 
-}
-
-
-@keyframes animateUser{
-    50%{
-        right: 30px;
-        top:-90px;
-    }
-}
 
 .imgbox #splash{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 110%;
+    position:relative;
+    opacity: 100%;
+    right: 20%;
+    width: 150%;
     filter: saturate(200%);
-    animation: animate 19s linear infinite;
+    animation: animate 24s linear infinite;
 }
+
 
 @keyframes animate{
    50%{
-        top: 49%;
-        left:51%;
-        width: 25%;
+        opacity:50%;
+        right:25%;
+        width: 240%;
     }
+}
+
+
+.imgbox2 #picture{
+    position:fixed;
+    left: 44%; 
+    filter: saturate(30%);
+    height: 88%;
 }
 
 
